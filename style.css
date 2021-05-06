@@ -1,0 +1,290 @@
+/* || GLOBAL STYLES */
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.container {
+  width: 75%;
+  height: 100%;
+}
+
+a {
+  color: rgba(13, 110, 253, 1);
+}
+
+/* || NAVBAR STYLES */
+
+nav {
+  width: 100%;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+.nav__link {
+  color: grey;
+  font-size: 1.8rem;
+}
+
+.nav__search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__img {
+  height: 18px;
+  width: 18px;
+  padding: 14px;
+}
+
+.nav__btn {
+  background-color: white;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+/* || TITLE SECTION */
+
+.title {
+  border-radius: 4px;
+  background-color: rgba(33, 37, 41, 1);
+  color: white;
+}
+
+.title__wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.title__head {
+  font-style: italic;
+  font-size: 4rem;
+}
+
+.title__desc {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.title__link {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+/* || CARD SECTION */
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__container {
+  display: flex;
+  width: 49.5%;
+  margin: 20px 0;
+  border: 1px solid rgba(222, 226, 230, 1);
+  border-radius: 4px;
+  box-shadow: 0px 10px 13px -7px rgba(222, 226, 230, 1);
+}
+
+.card__wrapper {
+  width: 70%;
+  font-size: 1.4rem;
+  padding: 14px;
+}
+
+.card__img {
+  background-color: rgba(85, 89, 92, 1);
+  border-radius: 0px 4px 4px 0px;
+  color: white;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+.card__title,
+.card__subtext,
+.card__desc {
+  margin: 2px;
+  padding: 2px;
+}
+
+.card__subtext--blue {
+  color: rgba(13, 110, 253, 1);
+}
+.card__subtext--green {
+  color: rgba(25, 135, 84, 1);
+}
+
+.card__title {
+  font-size: 3rem;
+}
+
+/* || BODY SECTION */
+
+.maincontent {
+  width: 100%;
+  display: flex;
+}
+
+.post {
+  width: 70%;
+}
+
+.post__head {
+  font-style: italic;
+  font-size: 2.8rem;
+}
+
+.post__title {
+  font-size: 3.5rem;
+}
+
+.post__subtitle {
+  font-size: 2.5rem;
+}
+
+.post__desc,
+.post__list {
+  font-size: 1.4rem;
+}
+
+.post__list {
+  padding-left: 25px;
+}
+
+/* || SIDEBAR SECTION */
+.sidebar {
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+}
+
+.sidebar__wrapper {
+  height: 100%;
+}
+
+.sidebar__content {
+  background-color: rgba(248, 249, 250, 1);
+  border-radius: 4px;
+  height: 20%;
+  padding: 20px;
+}
+
+.sidebar__title {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.sidebar__desc,
+.sidebar__item {
+  font-size: 1.4rem;
+}
+
+.sidebar__links,
+.sidebar__social {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+/* || POSTNAV SECTION */
+
+.postnav {
+  width: 100%;
+  height: 10%;
+}
+
+.postnav__wrapper {
+  display: flex;
+}
+
+.postnav__btn {
+  border: 1px solid rgba(222, 226, 230, 1);
+  color: rgb(117, 120, 123);
+  font-size: 1.4rem;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 18px;
+}
+
+.postnav__btn--active {
+  border: 1px solid rgba(13, 110, 253, 1);
+  color: rgba(13, 110, 253, 1);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 300px) and (max-width: 920px) {
+  .nav__link {
+    padding: 6px;
+  }
+  .title {
+    padding: 2px 8px;
+  }
+  .title__wrapper {
+    width: 100%;
+    padding: 6px;
+  }
+  br {
+    display: none;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card__container {
+    width: auto;
+    margin: 10px 0px;
+  }
+  .card__wrapper {
+    width: auto;
+  }
+  .card__img {
+    display: none;
+  }
+  .maincontent {
+    flex-wrap: wrap;
+  }
+  .post {
+    width: auto;
+  }
+  .sidebar {
+    width: auto;
+  }
+}
+ 
