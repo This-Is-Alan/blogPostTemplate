@@ -12,7 +12,7 @@ main {
 }
 
 .container {
-  width: 75%;
+  width: 90%;
   height: 100%;
 }
 
@@ -37,7 +37,8 @@ nav {
   text-decoration: underline;
 }
 
-.nav__link {
+.nav__link,
+.subnav__link {
   color: grey;
   font-size: 1.8rem;
 }
@@ -63,8 +64,9 @@ nav {
 }
 
 .subnav {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  overflow-y: hidden;
   justify-content: space-between;
   margin: 15px 0px;
 }
@@ -85,20 +87,21 @@ nav {
   justify-content: center;
   justify-content: space-around;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .title__head {
   font-style: italic;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .title__desc {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: lighter;
 }
 .title__link {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bolder;
 }
 
@@ -192,6 +195,8 @@ nav {
   width: 30%;
   height: 100%;
   padding: 20px;
+  position: sticky;
+  top: 1rem;
 }
 
 .sidebar__wrapper {
@@ -251,6 +256,9 @@ nav {
 
 @media screen and (min-width: 300px) and (max-width: 920px) {
   .nav__link {
+    padding: 0 24px 0 0;
+  }
+  .subnav__link {
     padding: 6px;
   }
   .title {
@@ -287,4 +295,3 @@ nav {
     width: auto;
   }
 }
- 
